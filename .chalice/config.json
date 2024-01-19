@@ -5,13 +5,13 @@
     "prod": {
       "lambda_memory_size": 256,
       "environment_variables": {
-        "USERNAME": "Onitsiky de Prod"
+        "USERNAME": "{{resolve:ssm:/hello-gicha/prod/message}}"
       }
     },
     "preprod": {
       "lambda_memory_size": 256,
       "environment_variables": {
-        "USERNAME": "Onitsiky de Preprod"
+        "USERNAME": "{{resolve:ssm:/hello-gicha/preprod/message}}"
       }
     }
   }

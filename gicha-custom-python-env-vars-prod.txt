@@ -1,1 +1,1 @@
-"USERNAME": "Onitsiky de Prod"
+"USERNAME": "{{resolve:ssm:/hello-gicha/prod/message}}"
