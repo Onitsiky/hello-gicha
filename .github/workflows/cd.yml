@@ -33,5 +33,4 @@ jobs:
         run: |
             python3 -m pip install chalice boto3
             python3 replace_env_with_ssm_values.py ./.chalice/config.json
-            cat ./gicha-custom-python-env-vars-${{ github.ref_name }}.txt
             chalice deploy --stage ${{ github.ref_name }}
