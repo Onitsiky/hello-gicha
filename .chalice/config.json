@@ -5,13 +5,13 @@
     "prod": {
       "lambda_memory_size": 256,
       "environment_variables": {
-        
+        "USERNAME": "Onitsiky de Prod"
       }
     },
     "preprod": {
       "lambda_memory_size": 256,
       "environment_variables": {
-        
+        "USERNAME": "Onitsiky de Preprod"
       }
     }
   }
